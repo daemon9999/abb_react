@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Legion Pro",
+    "price": 1400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 2,
+    "name": "Plugable Compact",
+    "price": 50.5,
+    "imgUrl": "https://plugable.com/cdn/shop/products/main_ori_b946b2c9-ff40-415d-8b70-1efb64e5da61.jpg?v=1645482737",
+    "sku": 20,
+    "color": "black"
+  },
+  {
+    "id": 3,
+    "name": "RK ROYAL KLUDGE",
+    "price": 90.25,
+    "imgUrl": "https://m.media-amazon.com/images/I/71iboo6UxhL._AC_UF894,1000_QL80_.jpg",
+    "sku": 12,
+    "color": "white"
+  },
+  {
+    "id": 4,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 5,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 6,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 7,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 8,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 9,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  },
+  {
+    "id": 10,
+    "name": "Legion Pro",
+    "price": 3400.0,
+    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
+    "sku": 6,
+    "color": "gray"
+  }
+]
