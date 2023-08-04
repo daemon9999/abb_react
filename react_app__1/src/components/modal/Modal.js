@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Modal.module.scss'; // Import SCSS file for Modal styles
-
+import PropTypes from "prop-types"
 class Modal extends React.Component {
 
   handleClickOutside = (event) => {
@@ -8,7 +8,7 @@ class Modal extends React.Component {
       this.props.closeModal();
     }
   };
-  
+
   componentDidMount() {
     document.addEventListener('mousedown', this.handleClickOutside);
   }
@@ -48,3 +48,13 @@ class Modal extends React.Component {
 }
 
 export default Modal;
+
+
+Modal.propTypes = {
+  header: PropTypes.string.isRequired,
+  closeButton: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired,
+  actions: PropTypes.node,
+  closeModal: PropTypes.func
+
+}

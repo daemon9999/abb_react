@@ -5,7 +5,7 @@
     "price": 1400.0,
     "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
     "sku": 6,
-    "color": "gray"
+    "color": "Gray"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "price": 50.5,
     "imgUrl": "https://plugable.com/cdn/shop/products/main_ori_b946b2c9-ff40-415d-8b70-1efb64e5da61.jpg?v=1645482737",
     "sku": 20,
-    "color": "black"
+    "color": "Black"
   },
   {
     "id": 3,
@@ -21,62 +21,62 @@
     "price": 90.25,
     "imgUrl": "https://m.media-amazon.com/images/I/71iboo6UxhL._AC_UF894,1000_QL80_.jpg",
     "sku": 12,
-    "color": "white"
+    "color": "White"
   },
   {
     "id": 4,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "HD LED TV",
+    "price": 350.76,
+    "imgUrl": "https://www.lg.com/in/images/monitors/md07534746/gallery/32SP510M-DZ-02.jpg",
+    "sku": 3,
+    "color": "Darkgray"
   },
   {
     "id": 5,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "Yeti Nano",
+    "price": 50.7,
+    "imgUrl": "https://resource.logitech.com/content/dam/gaming/en/products/streaming-gear/yeti-nano-usb-microphone/gallery/yeti-nano-black-microphone-gallery-1.png",
+    "sku": 11,
+    "color": "Black"
   },
   {
     "id": 6,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "Seenda Bluetooth Mouse",
+    "price": 25.14,
+    "imgUrl": "https://m.media-amazon.com/images/I/7179j13sUUL.jpg",
+    "sku": 26,
+    "color": "Red"
   },
   {
     "id": 7,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "Macbook Air M1",
+    "price": 1400.0,
+    "imgUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-macbook-air-gold-m1-202010_AV1?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1634148580000",
+    "sku": 4,
+    "color": "Pink"
   },
   {
     "id": 8,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "IPad Wi-Fi 64GB",
+    "price": 599.99,
+    "imgUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink-wifi_AV1_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670859402891",
+    "sku": 9,
+    "color": "Palevioletred"
   },
   {
     "id": 9,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "Apple iPhone 14 Pro",
+    "price": 999.99,
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2BwykHGLA0_kj6xJ0uKentO12k2XOiVU0mw&usqp=CAU",
+    "sku": 32,
+    "color": "Gold"
   },
   {
     "id": 10,
-    "name": "Legion Pro",
-    "price": 3400.0,
-    "imgUrl": "https://i.ebayimg.com/images/g/lH0AAOSwJfhj6s6x/s-l1200.webp",
-    "sku": 6,
-    "color": "gray"
+    "name": "ESP James Hetfield Snakebyte Electric Guitar",
+    "price": 10000.0,
+    "imgUrl": "https://cdn.connectsites.net/user_files/esp/product_images/000/020/346/original.png?1453394856",
+    "sku": 1,
+    "color": "Black"
   }
 ]
