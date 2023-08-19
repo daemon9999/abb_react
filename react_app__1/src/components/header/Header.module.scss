@@ -21,12 +21,13 @@
     display: flex;
     align-items: center;
     column-gap: 40px;
-    color: cyan;
+    
 
    
-    &>span{
+    &>a{
         position: relative;
         cursor: pointer;
+        color: cyan;
         
     }
 
