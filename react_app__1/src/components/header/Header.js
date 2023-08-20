@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./Header.module.scss"
 import { BsFillCartFill } from 'react-icons/bs'
 import { MdFavorite } from "react-icons/md"
-import PropTypes from "prop-types"
 
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
@@ -52,7 +51,3 @@ const Header = () => {
 export default Header
 
 
-Header.propTypes = {
-  favoritesCount: PropTypes.number,
-  cartProductsCount: PropTypes.number
-}

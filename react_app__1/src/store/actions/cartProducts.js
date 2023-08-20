@@ -4,3 +4,9 @@ export const toggleCart = (product) => {
         payload: product
     }
 }
+
+export const clearCart = () => {
+    return {
+        type: 'CLEAR_CART'
+    }
+}
