@@ -1,30 +1,17 @@
 import ProductsList from 'components/products-list/ProductsList'
-import { useProducts } from 'context/ContextProvider'
+
 import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchData } from 'store/actions/products'
 
 const Home = () => {
-    const { products, setLoadingProducts, setProducts } = useProducts()
+    const { products } = useSelector(state => state.products)
+    const dispatch = useDispatch()
 
 
 
     useEffect(() => {
-        const fetchProducts = () => {
-
-            fetch('/products.json')
-                .then(res => res.json())
-                .then(data => {
-                    setLoadingProducts(false)
-                    setProducts(data)
-
-                })
-                .catch(err => {
-                    throw new Error(err)
-                })
-        }
-        setTimeout(fetchProducts, 1000)
-        return () => {
-            clearTimeout(fetchProducts, 1000)
-        }
+        dispatch(fetchData())
     }, [])
 
 

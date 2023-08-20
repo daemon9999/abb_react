@@ -3,12 +3,13 @@ import Header from 'components/header/Header'
 import Footer from 'components/footer/Footer'
 
 import { Outlet } from 'react-router-dom'
-import { useProducts } from 'context/ContextProvider'
+
 import Modal from 'components/modal/Modal'
+import { useSelector } from 'react-redux'
 
 
 const MainLayout = () => {
-  const { modals } = useProducts()
+  const { modals } = useSelector(state => state.modal)
 
 
   return (

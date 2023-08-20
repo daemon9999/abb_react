@@ -1,9 +1,10 @@
 import ProductsList from 'components/products-list/ProductsList'
-import { useProducts } from 'context/ContextProvider'
+
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const Cart = () => {
-  const {cartProducts} = useProducts()
+  const {cartProducts} = useSelector(state => state.cart)
 
 
   return (

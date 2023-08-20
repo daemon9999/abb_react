@@ -3,11 +3,13 @@ import styles from "./Header.module.scss"
 import { BsFillCartFill } from 'react-icons/bs'
 import { MdFavorite } from "react-icons/md"
 import PropTypes from "prop-types"
-import { useProducts } from 'context/ContextProvider'
+
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
-  const { favorites, cartProducts } = useProducts()
+  const { favorites } = useSelector(state => state.favorites)
+  const { cartProducts } = useSelector(state => state.cart)
   return (
     <header className={styles.header}>
 

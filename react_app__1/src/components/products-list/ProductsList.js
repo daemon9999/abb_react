@@ -3,13 +3,15 @@ import styles from "./ProductsList.module.scss"
 import Product from "components/product/Product";
 import PropTypes from "prop-types"
 import Loader from "components/loader/Loader";
-import { useProducts } from "context/ContextProvider";
+
 import { useLocation } from "react-router-dom";
 import NotAvailable from "components/not-available/NotAvailable";
+import { useSelector } from "react-redux";
 
 const ProductsList = ({ itemList }) => {
-    const { loadingProducts, cartProducts, favorites } = useProducts()
-
+    const {cartProducts} = useSelector(state => state.cart)
+    const {favorites} = useSelector(state => state.favorites)
+    const {loading, error} = useSelector(state => state.products)
     const location = useLocation()
   
 
@@ -27,7 +29,7 @@ const ProductsList = ({ itemList }) => {
 
     return (
         <main className={styles.products}>
-            {(!!loadingProducts && location.pathname === '/') && (<Loader />)}
+            {(!!loading && location.pathname === '/') && (<Loader />)}
             {(itemList.length === 0 && location.pathname !== '/') && (
                 <NotAvailable type={location.pathname === '/cart' ? 'cart' : location.pathname === '/favorites' ? 'favorite' : ''} />
             )}
@@ -43,6 +45,8 @@ const ProductsList = ({ itemList }) => {
                     ))}
 
                 </div>)}
+
+            {error && (<NotAvailable text="Failed to fetch products"/>)}
 
 
         </main>

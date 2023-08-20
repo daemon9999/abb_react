@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Product.module.scss"
 import PropTypes from "prop-types"
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from 'react-icons/md'
 
-import { useProducts } from "context/ContextProvider";
+
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import { BsCheckLg } from "react-icons/bs";
+import { useDispatch, useSelector } from "react-redux";
+import { appendModal, deleteModal } from "store/actions/modal";
+import { toggleCart } from "store/actions/cartProducts";
+import { toggleFavorite } from "store/actions/favorites";
 
 
 
 const Product = ({ product }) => {
-
-    const { toggleCartProduct, toggleFavorite, closeModal, appendModal, favorites, cartProducts } = useProducts()
+    const { cartProducts } = useSelector(state => state.cart)
+    const { favorites } = useSelector(state => state.favorites)
+    const dispatch = useDispatch()
 
     const location = useLocation()
     const addModalData = {
@@ -20,13 +23,13 @@ const Product = ({ product }) => {
         closeButton: true,
         text: `Do you want to add product ${product.name
             } to the cart?`,
-        closeModal,
+        closeModal: () => dispatch(deleteModal()),
         actions: <><button onClick={() => {
             product.isAdded = true
-            closeModal()
-            toggleCartProduct(product)
+            dispatch(deleteModal())
+            dispatch(toggleCart(product))
         }} className={styles["modal-btn btn-success"]}>Add</button>
-            <button onClick={() => closeModal()} className={styles["modal-btn btn-danger"]}>Cancel</button></>
+            <button onClick={() => dispatch(deleteModal())} className={styles["modal-btn btn-danger"]}>Cancel</button></>
     }
 
     const removeModalData = {
@@ -34,13 +37,13 @@ const Product = ({ product }) => {
         closeButton: true,
         text: `Do you want to remove product ${product.name
             } from the cart?`,
-        closeModal,
+        closeModal: () => dispatch(deleteModal()),
         actions: <><button onClick={() => {
             delete product.isAdded
-            closeModal()
-            toggleCartProduct(product)
+            dispatch(deleteModal())
+            dispatch(toggleCart(product))
         }} className={styles["modal-btn btn-success"]}>Remove</button>
-            <button onClick={() => closeModal()} className={styles["modal-btn btn-danger"]}>Cancel</button></>
+            <button onClick={() => dispatch(deleteModal())} className={styles["modal-btn btn-danger"]}>Cancel</button></>
     }
 
 
@@ -87,9 +90,9 @@ const Product = ({ product }) => {
 
                 <div className={styles['product__actions']}>
                     {location.pathname === '/cart' ? (
-                        <button onClick={() => appendModal(removeModalData)} type="button" className={`${styles['cart']}`}>Remove</button>
+                        <button onClick={() => dispatch(appendModal(removeModalData))} type="button" className={`${styles['cart']}`}>Remove</button>
                     ) : (
-                        <button onClick={() => appendModal(addModalData)} disabled={product.isAdded} type="button" className={`${styles['cart']}`}>{product.isAdded ? 'Added' : 'Add to cart'}</button>
+                        <button onClick={() => dispatch(appendModal(addModalData))} disabled={product.isAdded} type="button" className={`${styles['cart']}`}>{product.isAdded ? 'Added' : 'Add to cart'}</button>
                     )}
                     <button onClick={() => {
 
@@ -98,7 +101,7 @@ const Product = ({ product }) => {
                         } else {
                             product.isFavorite = true
                         }
-                        toggleFavorite(product)
+                        dispatch(toggleFavorite(product))
                     }} type="button" className={styles['favorite']}>
 
                         {product.isFavorite ? <MdOutlineFavorite size={28} /> : <MdOutlineFavoriteBorder size={28} />}
